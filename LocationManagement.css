@@ -1,0 +1,69 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s forwards;
+}
+
+.bg-image {
+  background-image: url('../../assets/location.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.search-icon-container {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cda45e;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-icon-container:hover {
+  background-color: #b0843b;
+}
+
+.edit-icon-container,
+.delete-icon-container {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.edit-icon-container:hover {
+  background-color: #b0843b;
+}
+
+.delete-icon-container:hover {
+  background-color: #e63946;
+  border-color: #d62828;
+}
+
+@media (max-width: 768px) {
+  .search-icon-container,
+  .edit-icon-container,
+  .delete-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+}
+

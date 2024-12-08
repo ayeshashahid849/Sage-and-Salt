@@ -1,0 +1,60 @@
+:root {
+  --color-dark: #0c0b09;
+  --color-dark-secondary: #1a1814;
+  --color-gold: #cda45e;
+  --color-gold-light: #d4af37;
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-dark-secondary {
+  background-color: var(--color-dark-secondary);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.border-gold {
+  border-color: var(--color-gold);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.bg-image {
+  background-image: url('../../assets/order.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+
+.hover\:bg-gold:hover {
+  background-color: var(--color-gold);
+}
+
+.hover\:text-dark:hover {
+  color: var(--color-dark);
+}
+
+/* Responsive table styles */
+@media (max-width: 640px) {
+  table {
+    font-size: 0.875rem;
+  }
+
+  th, td {
+    padding: 0.5rem 0.25rem;
+  }
+}
+
